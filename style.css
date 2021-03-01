@@ -4,6 +4,7 @@ html, * {
     box-sizing: border-box;
     color: #222;
     font-family: 'Titillium Web', sans-serif;
+    font-display: optional;
 }
 
 h1, h2, h3, h4, h5 {
@@ -140,6 +141,7 @@ svg {
 
 .textCarousel {
     width: 100%;
+    overflow: hidden;
 }
 
 .textCarousel-caption>h3 {
@@ -339,6 +341,11 @@ footer>p {
         overflow: hidden;
         white-space: wrap;
     }
+
+    .textCarousel-inner {
+        overflow: hidden;
+    }
+
     .carousel {
         margin-top: 0;
         padding-top: 0;
@@ -364,6 +371,11 @@ footer>p {
         .collapse:not(.show) {
             display: block !important;
         }
+
+        .textCarousel-inner {
+            overflow: hidden;
+        }
+    
     }
     @media only screen and (min-width: 650px) {
         .textCarousel-caption>h3 {
@@ -372,6 +384,10 @@ footer>p {
         .commercialCleaning {
             width: 50vw !important;
         }
+        .textCarousel-inner {
+            overflow: hidden;
+        }
+    
     }
     @media only screen and (min-width: 776px) {
         .textCarousel-caption>h3 {
@@ -394,6 +410,10 @@ footer>p {
         .locations > p {
                 display: inline;
         }
+        .textCarousel-inner {
+            overflow: hidden;
+        }
+    
     }
     @media only screen and (min-width: 1000px) {
         .textCarousel-caption>h3 {
@@ -413,4 +433,8 @@ footer>p {
             width: auto !important;
             height: auto !important;
         }
+        .textCarousel-inner {
+            overflow: hidden;
+        }
+    
     }
