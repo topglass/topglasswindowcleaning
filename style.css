@@ -53,9 +53,9 @@ button, a, i {
 
 .anchor {
     display: block;
-    height: 96px;
+    height: 118px;
     /*same height as header*/
-    margin-top: -96px;
+    margin-top: -118px;
     /*same height as header*/
     visibility: hidden;
 }
@@ -212,18 +212,15 @@ hr {
     font-weight: 500 !important;
 }
 
-
 #services {
     margin-top: 2rem;
     height: auto;
     width: 100%;
 }
 
-
 #services>h2 {
     font-weight: 700 !important;
 }
-
 
 .card-title {
     font-weight: 700 !important;
@@ -322,27 +319,24 @@ footer>p {
 }
 
 .officeHours {
+    width: 100%;
     text-decoration: underline;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-right: 1rem;
 }
 
 .dailyTimes {
+    width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .locations>p {
     display: inline;
-}
-
-.iconLink {
-    font-size: 10px;
-    opacity: 0.5;
-    color: black;
-    display: flex;
-    align-self: flex-end;
+    margin: 1rem;
 }
 
 /* mobile view */
@@ -366,9 +360,12 @@ footer>p {
         height: 50vh !important;
         width: auto !important;
     }
-    .locations>p {
+    .locations {
+        width: 100%;
         display: flex;
         flex-direction: column;
+        justify-content: center!important;
+        align-items: center!important;
     }
 }
 
@@ -384,15 +381,25 @@ footer>p {
         margin: 2rem;
         font-size: 1.5rem;
     }
-    
     .specialists {
         font-size: 1.5rem;
+    }
+    .locations {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center!important;
+        align-items: center!important;
     }
 }
 
 @media only screen and (min-width: 650px) {
     .commercialCleaning {
         width: 50vw !important;
+    }
+
+    .locations {
+        
     }
 }
 
@@ -409,13 +416,16 @@ footer>p {
         justify-content: space-between;
         flex-direction: row;
     }
-    .locations>p {
-        display: inline;
+    .locations {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
     }
     .slogan {
         font-size: 1.9rem;
     }
-    
     .specialists {
         font-size: 1.9rem;
     }
