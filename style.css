@@ -9,10 +9,15 @@ html, * {
     line-height: 2rem;
 }
 
-h1, h2, h3, h4, h5 {
-    color: #047ec5f6;
+body {
+    overflow-x: hidden;
 }
 
+h1, h2, h3, h4, h5 {
+    color: #008cc3;
+}
+/* 00c1e7 */
+/* 047ec5f6 */
 button, a, i {
     cursor: pointer;
 }
@@ -28,7 +33,7 @@ button, a, i {
 }
 
 .contactNumber {
-    background: #047ec5f6 !important;
+    background: #008cc3!important;
     padding: 0.5rem;
     font-size: 0.8rem;
 }
@@ -43,7 +48,7 @@ button, a, i {
 
 .navbar-brand img {
     height: auto;
-    width: 10rem;
+    width: 4rem;
 }
 
 .nav-link>img {
@@ -147,20 +152,31 @@ svg {
 }
 
 .nav-link:hover {
-    color: #047ec5f6 !important;
+    color: #008cc3 !important;
 }
 
-.slogan {
+.logoWrap{
+    text-align: center;
+    margin-right: 0.2rem;
+
+}
+.logo {
+    height: 6.5rem; 
+    width: auto;
+}
+
+.landingImgWrapper{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin: 2rem;
-    font-size: 1.3rem;
+    height: 100%;
+    width: 100%;
 }
-
-.specialists {
-    font-size: 1.3rem;
+.landingImg{
+    justify-content: center;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    margin: 2.5rem;    
 }
 
 .statementList {
@@ -172,7 +188,7 @@ svg {
 }
 
 .fa-tint {
-    color: rgb(40, 134, 172);
+    color: #008cc3;
     font-size: 3rem;
     margin: 0.5rem;
 }
@@ -264,7 +280,7 @@ hr {
 
 footer {
     overflow: hidden;
-    background-color: #047ec5f6;
+    background-color: #008cc3;
     height: auto;
     width: 100%;
     display: flex;
@@ -419,12 +435,29 @@ footer>p {
         align-items: center;
 
     }
-    .slogan {
-        font-size: 1.9rem;
+    .landingImgWrapper{
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
     }
-    .specialists {
-        font-size: 1.9rem;
+    
+    .landingImg{
+        justify-content: center;
+        margin: 0 auto;
+        height: 90%;
+        width: auto;
+        margin-bottom: 1rem;    
     }
+    .logoWrap{
+        text-align: center;
+    
+    }
+    .logo {
+        height: 8rem; 
+        width: auto;
+    }
+    
 }
 
 @media only screen and (min-width: 1000px) {
@@ -442,4 +475,155 @@ footer>p {
         width: auto !important;
         height: auto !important;
     }
+
+    .navbar-brand img {
+        height: auto;
+        width: 6rem;
+    }
+
+    .landingImgWrapper{
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    .landingImg{
+        justify-content: center;
+        margin: 0 auto;
+        height: 90%;
+        width: auto;
+        margin-bottom: 1rem;    
+    }
+
+    .logoWrap{
+        text-align: center;
+    
+    }
+    .logo {
+        height: 8rem; 
+        width: auto;
+    }
+
+    .card{
+        width: 50%;
+    }
+    
+    
+}
+
+
+@media only screen and (min-width: 1920px) {
+    .contactNumber {
+        background: #008cc3!important;
+        padding: 2rem;
+        font-size: 1.8rem;
+    }
+
+    .contactNumber a{
+        margin-bottom: 1.5rem;
+    }
+
+    .navbar-brand img {
+        height: auto;
+        width: 15rem;
+    }
+
+    a.nav-link {
+        font-size: 3rem;
+        margin-right: 2rem;
+    }
+
+    .carousel {
+        height: auto;
+        width: 60vw;
+    }
+    .carousel {
+        margin-top: 2rem;
+    }
+    .commercialCleaning {
+        width: 50vw !important;
+    }
+    .commercialImg {
+        width: auto !important;
+        height: auto !important;
+    }
+
+    .statementList > h3 {
+        font-size: 4rem;
+    }
+
+    .fa-tint {
+        font-size: 5rem;
+    }
+
+    .aboutUsContainer {
+        width: 90%;
+        height: auto;
+    }
+    
+    .aboutUs {
+        font-size: 5rem;
+    }
+    
+    p.lead {
+        margin: 1rem;
+        padding: 1rem;
+        font-weight: 500 !important;
+        font-size: 5rem;
+        line-height: 4.2rem;
+    }
+
+    #services >h2 {
+        font-size: 5rem;
+    }
+
+    .card-text{
+        font-size: 5rem;
+        line-height: 4.2rem;
+    }
+
+    .card-title {
+        font-weight: 700 !important;
+        font-size: 4.5rem;
+    }
+    
+    .card {
+        margin-top: 1rem;
+        box-shadow: 4px 6px 6px -5px rgba(0, 0, 0, 0.95);
+        -webkit-box-shadow: 4px 6px 6px -5px rgba(0, 0, 0, 0.95);
+        -moz-box-shadow: 4px 6px 6px -5px rgba(0, 0, 0, 0.95);
+        width: 100%;
+        height: auto;
+    }
+
+    #contactUs {
+        height: 100%;
+    }
+    
+    .landingImgWrapper{
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    .landingImg{
+        justify-content: center;
+        margin: 0 auto;
+        height: 90%;
+        width: auto;
+        margin-bottom: 1rem;    
+    }
+
+    .logoWrap{
+        text-align: center;
+    
+    }
+    .logo {
+        height: 18rem; 
+        width: auto;
+    }
+    
+    
 }
